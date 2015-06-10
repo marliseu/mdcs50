@@ -137,44 +137,45 @@
 
         <!-- Projects Row -->
         <div class="row">
-            <?php
-                $portfolio = [
-                    [
-                        'container_class' => 'col-md-3 img-portfolio',
-                        'img_class' => 'img-responsive img-hover',
-                        'portfolio_link' => 'portfolio-item.html',
-                        'img_link' => 'http://lorempixel.com/g/750/450'
-                    ],
-                    [
-                        'container_class' => 'col-md-3 img-portfolio',
-                        'img_class' => 'img-responsive img-hover',
-                        'portfolio_link' => 'portfolio-item.html',
-                        'img_link' => 'http://lorempixel.com/g/750/450'
-                    ],
-                    [
-                        'container_class' => 'col-md-3 img-portfolio',
-                        'img_class' => 'img-responsive img-hover',
-                        'portfolio_link' => 'portfolio-item.html',
-                        'img_link' => 'http://lorempixel.com/g/750/450'
-                    ],
-                    [
-                        'container_class' => 'col-md-3 img-portfolio',
-                        'img_class' => 'img-responsive img-hover',
-                        'portfolio_link' => 'portfolio-item.html',
-                        'img_link' => 'http://lorempixel.com/g/750/450'
-                    ]
-                ];
+	        <?php
+	        $portfolio = [
+		        [
+			        'container_class' => 'col-md-3 img-portfolio',
+			        'img_class' => 'img-responsive img-hover',
+			        'portfolio_link' => 'portfolio-item.html',
+			        'img_link' => 'http://lorempixel.com/g/750/450',
+		        ],
+		        [
+			        'container_class' => 'col-md-3 img-portfolio',
+			        'img_class' => 'img-responsive img-hover',
+			        'portfolio_link' => 'portfolio-item.html',
+			        'img_link' => 'http://lorempixel.com/g/750/450',
+		        ],
+		        [
+			        'container_class' => 'col-md-3 img-portfolio',
+			        'img_class' => 'img-responsive img-hover',
+			        'portfolio_link' => 'portfolio-item.html',
+			        'img_link' => 'http://lorempixel.com/g/750/450',
+		        ],
+		        [
+			        'container_class' => 'col-md-3 img-portfolio',
+			        'img_class' => 'img-responsive img-hover',
+			        'portfolio_link' => 'portfolio-item.html',
+			        'img_link' => 'http://lorempixel.com/g/750/450',
+		        ],
+	        ];
 
-                foreach ( $portfolio as $portfolio_item ) {
-                    ?>
-                        <div class="<?= $portfolio_item['container_class'] ?>">
-                            <a href="<?= $portfolio_item['img_link'] ?>">
-                                <img class="<?= $portfolio_item['img_class'] ?>" src="<?= $portfolio_item['img_link'] ?>" alt="">
-                            </a>
-                        </div>
-                    <?php
-                }
-            ?>
+	        foreach ( $portfolio as $portfolio_item ) {
+		        ?>
+		        <div class="<?= $portfolio_item['container_class']; ?>">
+			        <a href="<?= $portfolio_item['img_link']; ?>">
+				        <img class="<?= $portfolio_item['img_class']; ?>" src="<?= $portfolio_item['img_link']; ?>" alt="">
+			        </a>
+		        </div>
+	            <?php
+	        }
+
+	        ?>
         </div>
         <!-- /.row -->
 
