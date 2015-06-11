@@ -1,8 +1,8 @@
 <?php
     $website_settings = [
         'site_title' => 'MarliseU Industries',
-        'page_head' => 'My Portfolio',
-        'subheading' => 'Subheading',
-
+        'page_title' => 'My Portfolio',
+        'subheading' => 'Quiet',
+        'copyright' => 'Copyright ©; Marlise Urscheler 2015'
     ];
 ?>

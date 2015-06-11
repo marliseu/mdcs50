@@ -126,7 +126,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header"><?= $website_settings['page_head'] ?>
+                <h1 class="page-header"><?= $website_settings['page_title'] ?>
                     <small><?= $website_settings['subheading'] ?></small>
                 </h1>
                 <ol class="breadcrumb">
@@ -222,7 +222,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2015</p>
+                    <p><?= $website_settings['copyright']; ?></p>
                 </div>
             </div>
         </footer>
