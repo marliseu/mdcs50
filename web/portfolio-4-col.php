@@ -183,7 +183,7 @@
         <!-- /.row -->
         </div>
 
-
+    <div class="container">
         <hr>
 
         <!-- Pagination -->
@@ -222,7 +222,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p><?= $website_settings['copyright']; ?></p>
+                    <p><?= sprintf($website_settings['copyright'], date('Y')); ?></p>
                 </div>
             </div>
         </footer>

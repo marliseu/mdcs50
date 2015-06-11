@@ -3,6 +3,6 @@
         'site_title' => 'MarliseU Industries',
         'page_title' => 'My Portfolio',
         'subheading' => 'Quiet',
-        'copyright' => 'Copyright ©; Marlise Urscheler 2015'
+        'copyright' => 'Copyright &copy; Marlise Urscheler %s',
     ];
 ?>
