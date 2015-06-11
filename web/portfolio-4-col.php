@@ -135,99 +135,51 @@
         </div>
         <!-- /.row -->
 
-        <!-- Projects Row -->
-        <div class="row">
+        <!-- Projects Rows -->
 	        <?php
-	        $portfolio = [
-		        [
-			        'container_class' => 'col-md-3 img-portfolio',
-			        'img_class' => 'img-responsive img-hover',
-			        'portfolio_link' => 'portfolio-item.html',
-			        'img_link' => 'http://lorempixel.com/g/750/450',
-		        ],
-		        [
-			        'container_class' => 'col-md-3 img-portfolio',
-			        'img_class' => 'img-responsive img-hover',
-			        'portfolio_link' => 'portfolio-item.html',
-			        'img_link' => 'http://lorempixel.com/g/750/450',
-		        ],
-		        [
-			        'container_class' => 'col-md-3 img-portfolio',
-			        'img_class' => 'img-responsive img-hover',
-			        'portfolio_link' => 'portfolio-item.html',
-			        'img_link' => 'http://lorempixel.com/g/750/450',
-		        ],
-		        [
-			        'container_class' => 'col-md-3 img-portfolio',
-			        'img_class' => 'img-responsive img-hover',
-			        'portfolio_link' => 'portfolio-item.html',
-			        'img_link' => 'http://lorempixel.com/g/750/450',
-		        ],
-	        ];
-
-	        foreach ( $portfolio as $portfolio_item ) {
-		        ?>
-		        <div class="<?= $portfolio_item['container_class']; ?>">
-			        <a href="<?= $portfolio_item['img_link']; ?>">
-				        <img class="<?= $portfolio_item['img_class']; ?>" src="<?= $portfolio_item['img_link']; ?>" alt="">
-			        </a>
-		        </div>
-	            <?php
-	        }
-
-	        ?>
-        </div>
+	            $portfolio = [
+		            [
+			            'container_class' => 'col-md-3 img-portfolio',
+			            'img_class' => 'img-responsive img-hover',
+			            'portfolio_link' => 'portfolio-item.html',
+			            'img_link' => 'http://lorempixel.com/g/750/450',
+		            ],
+		            [
+			            'container_class' => 'col-md-3 img-portfolio',
+			            'img_class' => 'img-responsive img-hover',
+			            'portfolio_link' => 'portfolio-item.html',
+			            'img_link' => 'http://lorempixel.com/g/750/450',
+		            ],
+		            [
+			            'container_class' => 'col-md-3 img-portfolio',
+			            'img_class' => 'img-responsive img-hover',
+			            'portfolio_link' => 'portfolio-item.html',
+			            'img_link' => 'http://lorempixel.com/g/750/450',
+		            ],
+		            [
+			            'container_class' => 'col-md-3 img-portfolio',
+			            'img_class' => 'img-responsive img-hover',
+			            'portfolio_link' => 'portfolio-item.html',
+			            'img_link' => 'http://lorempixel.com/g/750/450',
+		            ],
+	            ];
+                for ($i = 0; $i < 3; $i++) {
+                    echo "<div class=\"row\">";
+                    foreach ( $portfolio as $portfolio_item ) {
+                        ?>
+                        <div class="<?= $portfolio_item['container_class']; ?>">
+                            <a href="<?= $portfolio_item['img_link']; ?>">
+                                <img class="<?= $portfolio_item['img_class']; ?>" src="<?= $portfolio_item['img_link']; ?>" alt="">
+                            </a>
+                        </div>
+                        <?php
+                    }
+                    echo "</div>";
+                }
+            ?>
         <!-- /.row -->
-
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
         </div>
-        <!-- /.row -->
 
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-        </div>
-        <!-- /.row -->
 
         <hr>
 
