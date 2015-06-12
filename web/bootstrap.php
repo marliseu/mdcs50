@@ -4,5 +4,6 @@
         'page_title' => 'My Portfolio',
         'subheading' => 'Quiet',
         'copyright' => 'Copyright &copy; Marlise Urscheler %s',
+        'home' => 'MarliseU Ind.',
     ];
 ?>
