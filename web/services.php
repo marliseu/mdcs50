@@ -106,7 +106,7 @@
                                 <a href="404.php">404</a>
                             </li>
                             <li>
-                                <a href="pricing.html">Pricing Table</a>
+                                <a href="pricing.php">Pricing Table</a>
                             </li>
                         </ul>
                     </li>
