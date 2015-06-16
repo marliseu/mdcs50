@@ -1,6 +1,4 @@
-<?php
-require_once 'bootstrap.php';
-?>
+<?php require_once 'bootstrap.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -119,3 +117,5 @@ require_once 'bootstrap.php';
     </div>
     <!-- /.container -->
 </nav>
+
+<!-- Page Content -->
