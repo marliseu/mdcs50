@@ -1,6 +1,6 @@
 <?php
 
-    require_once 'bootstrap.php';
+    require_once 'functions.php';
 
     $website_settings = [
         'site_title' => 'MarliseU Industries',
@@ -45,25 +45,25 @@
                 'caption' => 'Caption 1',
             ],
             [
-                'img_url' => 'http://placehold.it/1900x1080&text=Slide Two',
+                'img_url' => 'http://lorempixel.com/g/750/450',
                 'caption' => 'Caption 2',
             ],
             [
-                'img_url' => 'http://placehold.it/1900x1080&text=Slide Three',
+                'img_url' => 'http://lorempixel.com/g/750/450',
                 'caption' => 'Caption 3',
             ]
         ],
         '/about.php' => [
             [
-                'img_url' => 'http://placehold.it/1900x1080&text=Slide One',
+                'img_url' => 'http://lorempixel.com/g/750/450',
                 'caption' => 'Caption 1',
             ],
             [
-                'img_url' => 'http://placehold.it/1900x1080&text=Slide Two',
+                'img_url' => 'http://lorempixel.com/g/750/450',
                 'caption' => 'Caption 2',
             ],
             [
-                'img_url' => 'http://placehold.it/1900x1080&text=Slide Three',
+                'img_url' => 'http://lorempixel.com/g/750/450',
                 'caption' => 'Caption 3',
             ]
         ]

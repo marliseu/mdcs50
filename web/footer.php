@@ -27,6 +27,14 @@
 </script>
 
 
+<!-- Contact Form JavaScript -->
+<!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+<?php if (getCurrentPage() == '/contact.php') : ?>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>'
+<?php endfor; ?>
+
+
 </body>
 
 </html>
