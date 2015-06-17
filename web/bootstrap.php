@@ -1,4 +1,7 @@
 <?php
+
+    require_once 'bootstrap.php';
+
     $website_settings = [
         'site_title' => 'MarliseU Industries',
         'page_title' => 'My Portfolio',
@@ -37,7 +40,8 @@
     $carousels = [
         '/index.php' => [
             [
-                'img_url' => 'http://placehold.it/1900x1080&text=Slide One',
+                'img_url' => 'http://lorempixel.com/g/750/450',
+//                'img_url' => 'http://placehold.it/1900x1080&text=Slide One',
                 'caption' => 'Caption 1',
             ],
             [
