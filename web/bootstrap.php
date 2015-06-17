@@ -34,21 +34,33 @@
         ],
     ];
 
-    $home_carousel = [
-        [
-            'img_url' => 'http://placehold.it/1900x1080&text=Slide One',
-            'caption' => 'Caption 1',
+    $carousels = [
+        '/index.php' => [
+            [
+                'img_url' => 'http://placehold.it/1900x1080&text=Slide One',
+                'caption' => 'Caption 1',
+            ],
+            [
+                'img_url' => 'http://placehold.it/1900x1080&text=Slide Two',
+                'caption' => 'Caption 2',
+            ],
+            [
+                'img_url' => 'http://placehold.it/1900x1080&text=Slide Three',
+                'caption' => 'Caption 3',
+            ]
         ],
-        [
-            'img_url' => 'http://placehold.it/1900x1080&text=Slide Two',
-            'caption' => 'Caption 2',
-        ],
-        [
-            'img_url' => 'http://placehold.it/1900x1080&text=Slide Three',
-            'caption' => 'Caption 3',
+        '/about.php' => [
+            [
+                'img_url' => 'http://placehold.it/1900x1080&text=Slide One',
+                'caption' => 'Caption 1',
+            ],
+            [
+                'img_url' => 'http://placehold.it/1900x1080&text=Slide Two',
+                'caption' => 'Caption 2',
+            ],
+            [
+                'img_url' => 'http://placehold.it/1900x1080&text=Slide Three',
+                'caption' => 'Caption 3',
+            ]
         ]
-    ];
-
-    $about_carousel = [
-
     ];

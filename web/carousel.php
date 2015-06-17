@@ -4,32 +4,22 @@
 <header id="myCarousel" class="carousel slide">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-        <?php for ($i = 0; $i < count($about_carousel); $i++): ?>
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <?php $carousel_length = count($carousels[$_SERVER['REQUEST_URI']]); ?>
+        <?php for ($index = 0; $index < $carousel_length; $index++) : ?>
+            <li data-target="#myCarousel" data-slide-to="<?= $index; ?>" <?= ($index == 0) ? 'class="active"': '' ?>></li>
         <?php endfor; ?>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-        <div class="item active">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
-            <div class="carousel-caption">
-                <h2>Caption 1</h2>
+        <?php for ($index = 0; $index < $carousel_length; $index++) : ?>
+            <div class="item <?= ($index == 0) ? ' active' : '' ?>">
+                <div class="fill" style="background-image:url('<?= $carousels[$_SERVER['REQUEST_URI']][$index]['img_url'] ?>');"></div>
+                <div class="carousel-caption">
+                    <h2><?= $carousels[$_SERVER['REQUEST_URI']][$index]['caption'] ?></h2>
+                </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-            <div class="carousel-caption">
-                <h2>Caption 2</h2>
-            </div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-            <div class="carousel-caption">
-                <h2>Caption 3</h2>
-            </div>
-        </div>
-    </div>
+        <?php endfor; ?>
 
     <!-- Controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -38,3 +28,4 @@
     <a class="right carousel-control" href="#myCarousel" data-slide="next">
         <span class="icon-next"></span>
     </a>
+</header>

@@ -1,6 +1,5 @@
 <?php require_once 'header.php'; ?>
 <?php require_once 'carousel.php'; ?>
-</header>
 
 <!-- Page Content -->
 <div class="container">
