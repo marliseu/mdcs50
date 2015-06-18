@@ -21,7 +21,7 @@
 
 <!-- Script to Activate the Carousel -->
 <script>
-    $('#myCarousel').carousel({
+    $('.carousel').carousel({
         interval:5000 //changes the speed
     })
 </script>

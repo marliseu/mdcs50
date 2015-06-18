@@ -14,7 +14,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <?php for ($index = 0; $index < $carousel_length; $index++) : ?>
-            <div class="item <?= ($index == 0) ? ' active' : '' ?>">
+            <div class="item<?= ($index == 0) ? ' active' : '' ?>">
                 <div class="fill" style="background-image:url('<?= $carousels[$current][$index]['img_url'] ?>');"></div>
                 <div class="carousel-caption">
                     <h2><?= $carousels[$current][$index]['caption'] ?></h2>
