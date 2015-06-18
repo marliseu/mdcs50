@@ -32,7 +32,7 @@
 <?php if (getCurrentPage() == '/contact.php') : ?>
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>'
-<?php endfor; ?>
+<?php endif; ?>
 
 
 </body>
