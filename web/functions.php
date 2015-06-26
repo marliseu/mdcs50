@@ -1,6 +1,13 @@
 <?php
 
 
+function clean_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlentities($data);
+    return $data;
+}
+
 function getCurrentPage()
 {
     $current = $_SERVER['REQUEST_URI'];
@@ -11,6 +18,7 @@ function getCurrentPage()
     return $current;
 };
 
+
 function getCarousel($id = null)
 {
     $carousels = [
@@ -18,29 +26,29 @@ function getCarousel($id = null)
             [
                 'img_url' => 'http://lorempixel.com/g/750/450',
                 //'img_url' => 'http://placehold.it/1900x1080&text=Slide One',
-                'caption' => 'Caption 1',
+                'caption' => 'Home Caption 1',
             ],
             [
                 'img_url' => 'http://lorempixel.com/g/750/450',
-                'caption' => 'Caption 2',
+                'caption' => 'Home Caption 2',
             ],
             [
                 'img_url' => 'http://lorempixel.com/g/750/450',
-                'caption' => 'Caption 3',
+                'caption' => 'Home Caption 3',
             ]
         ],
         '/about.php' => [
             [
                 'img_url' => 'http://lorempixel.com/g/750/450',
-                'caption' => 'Caption 1',
+                'caption' => 'About Caption 1',
             ],
             [
                 'img_url' => 'http://lorempixel.com/g/750/450',
-                'caption' => 'Caption 2',
+                'caption' => 'About Caption 2',
             ],
             [
                 'img_url' => 'http://lorempixel.com/g/750/450',
-                'caption' => 'Caption 3',
+                'caption' => 'About Caption 3',
             ]
         ]
     ];

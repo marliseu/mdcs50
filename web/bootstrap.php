@@ -1,6 +1,9 @@
 <?php
 
+    $config = 'config.php';
     require_once 'functions.php';
+    require_once 'database.php';
+    require_once 'process-forms.php';
 
     $website_settings = [
         'site_title' => 'MarliseU Industries',
